@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	--first-background-color: #090C0D;
+    --tbody-color: #181A1B;
+    --text-color: #e4dcdc;
+    --headers-color: #40c269;
+    --secondary-color: #121415;
+}
+
+
+/* customize headers  */
+
+h1,
+h2,
+h3 {
+    font-family: Roboto;
+    font-weight: bold!important;
+    color: var( --headers-color)!important
+}
+
+
+
+#classicalJournal table tbody {
+    background-color: var(--tbody-color)
+}
+
+body,
+html {
+    background-color: var(--first-background-color)!important;
+    height: 100%!important;
+    width: 3600px!important;
+}
+
+
+/*  ##### delete elements  ##### */
+
+.leftTopTbl tbody {
+    display: none!important
+}
+
+
+/* #####   Set bright color   #####*/
+
+a,
+p,
+span,
+td,
+th,
+.header_journal p.year,
+.crumbs li:nth-child(2),
+.leads{
+    color: var(--text-color)!important
+}
+
+
+
+/* #####   Set custom buttons   #####*/
+
+button:before {
+    transition: opacity .5s linear;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(100deg, #e80081 0, #23e100)!important;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 15px
+}
+button:hover::before {
+    opacity: 1
+}
+button {
+    z-index: 1!important;
+    position: relative;
+    background-image: linear-gradient(100deg, #e80081 0, #e80081)!important;
+    transition: all 1.4s!important;
+    text-shadow: none!important;
+    box-shadow: none!important;
+    border-radius: 15px!important;
+    font-family: Roboto!important;
+    outline: none!important;
+    border: none!important;
+    font-weight: normal!important
+}
+
+
+
+
+/* #####   replace default images   #####*/
+
+.iconbar li:nth-child(3),
+.iconbar li:last-child {
+    display: none
+}
+.iconbar li {
+    position: relative
+}
+.iconbar li a:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat
+}
+.iconbar li:nth-child(1) a:before {
+    background-image: url(https://i.ibb.co/WnjxWdj/printing-tool-3.png)
+}
+.iconbar li:nth-child(2) a:before {
+    background-image: url(https://i.ibb.co/PY5FHPT/1720393-32.png)
+}
+.iconbar li:nth-child(4) a:before {
+    background-image: url(https://i.ibb.co/z87KRRM/passage-of-time-1.png)
+}
+.journal_tbl tr:nth-child(4) {
+    font-size: .9em
+}
+.iconbar li img {
+    visibility: hidden
+}
+
+
+
+/* ##### header of the table ##### */
+
+
+#classicalJournal #head_row table {
+    border-right: none!important;
+}
+thead * {
+    background-color: var(--secondary-color)!important
+}
+thead {
+    border-bottom: 3px solid #3a3987!important;
+    top: 20%
+}
+thead tr th a,
+thead tr th {
+    font-size: .9em
+}
+#head_row {
+    top: 250px!important;
+    left: 215px!important;
+    position: absolute;
+    z-index: 3!important;
+    width: 0!important;
+    height: 100%!important;
+    overflow: initial!important
+}
+
+
+/* ##### left column with students #####*/
+
+#left_column * {
+    background-color: var(--secondary-color)!important
+}
+#left_column {
+    overflow: visible!important;
+    z-index: 4!important;
+    position: sticky!important;
+}
+#left_column table {
+    margin-top: 124px!important;
+    left: 0!important;
+    position: sticky!important;
+    border-right: 2px solid blueviolet!important;
+}
+#left_column a {
+    font-family: Comfortaa!important;
+    font-size: 1em;
+    color: #888
+}
+
+
+
+/* ##### main area of the table ##### */
+
+#classicalJournal table{
+	margin-bottom: 2%;
+}
+
+#main_area .marks td span div.pres {
+    margin-left: auto!important;
+    margin-right: auto!important;
+    font-weight: 100!important;
+    color: #e54a5c!important;
+    font-size: 1.9em!important
+}
+#classicalJournal table.vam td:not(.mark_noe):hover {
+    background-color: #404040!important
+}
+#classicalJournal table.vam td {
+    vertical-align: middle!important
+}
+#classicalJournal td,
+#classicalJournal th {
+    border: 1px solid #252829!important
+}
+#main_area .marks td .mG,
+#main_area .marks td .mY,
+#main_area .marks td .mR,
+#main_area .marks td .mX {
+    font-size: 1.7em!important;
+    font-weight: normal!important;
+    color: #381521!important
+}
+
+div#main_area {
+    overflow: visible!important
+}
+
+
+#classicalJournal table td.persName {
+    padding-left: 5px!important
+}
+
+
+
+#classicalJournal #head_row table {
+    border-right: 3px solid #3a3987!important;
+    position: sticky!important;
+    top: 0!important;
+    height: auto!important
+}
+
+table div {
+    overflow: inherit!important
+}
+
+
+
+
+
+/*  customize links ul on the top right corner of the page  */
+ul.lilink li a {
+    font-family: Roboto;
+    font-size: 1.13em
+}
+ul.lilink li a,
+th a {
+    transition: all 1s!important
+}
+ul.lilink li a:hover,
+th a:hover,
+a.u:hover {
+    color: #d79719!important
+}
+.top_right_menu{
+	float: none!important;
+}
+
+.header_journal{
+overflow: auto!important;
+    min-height: 212px;
+    height: 212px;
+	width: 90vw;
+    position: sticky;
+    left: 5%;
+}
+
+/* text on the top of the page */
+.l * { 
+    font-family: Roboto;
+    transition: all .8s
+}
+/* period-choose area */
+#formHeader .option_row .group.journal-header {
+    margin-top: 2px
+}
+
+
+
+/*  custom selection of subjects  */
+select { 
+    border: none!important;
+    text-align: center!important;
+    outline: none!important;
+    color: #aaa!important;
+    background-color: #222!important;
+    font-size: 1.11em!important;
+    position: relative!important;
+    font-family: Roboto!important
+}
+
+
+/* average mark */
+.average div { 
+    color: #ffdb00!important;
+    font-size: 1.5em!important
+}
+
+
+
+
+.period_list a,
+.crumbs a {
+    color: #b8b8b8!important;
+    transition: .8s all
+}
+
+
+.mark_noe,
+.mark_noe:hover {
+    background-color: #090c0d!important
+}
+
+
+
+.period_list .active:hover,
+.group.data .active:hover {
+    background-color: #209720!important;
+    color: #121212!important
+}
+
+.period_list .active,
+.group.data .active {
+    padding: 0 13px!important;
+    border-radius: 10px;
+    background-color: #209720!important;
+    color: #00dada!important
+}
+
+.period_list a:hover,
+.crumbs a:hover,
+.group.data a:hover,
+a.u:hover { /*  set color of hovered links */
+    background-color: inherit!important;
+    color: #d79719!important
+}
+
+.l,
+.crumbs *,
+.group.data * {
+    font-size: 1.13em!important
+}
+.persN {
+    color: #587777!important
+}
+
+#fixedArea{
+	width: auto!important
+}
