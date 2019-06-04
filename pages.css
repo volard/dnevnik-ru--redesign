@@ -1,0 +1,1158 @@
+/* ##### This section describes elements on the main page #####
+ *
+ * .TwNu0 - общая кнопка фильтрации ленты (все / только новые)
+ * ._3JScN ._285dZ - отображение уведомления о новых записях
+ *
+ * .GJNLK * - шапка бокового календаря
+ *      ._15ywV - дни в боковом календаре
+ *      ._34Q-1 - стрелки на календаре сбоку
+ *
+ * ._2yP12>a>img - изображение логотипа гимназии в постах слева сверху
+ * .f4x61 div svg - изображение иконки в поле "просмотров записи"
+ * ._1wh1G img -  картинки  классов на главной странице
+ *
+ * ._1x1-2 -  главное окно popup'а
+ *      .Zr-iQ и ._32TO3 - табы "просмотрели" и "не просмотрели", где ._1k2Ot обозначает все табы, а .Zr-iQ - активный таб
+ *      ._1aEpT -  фон у popup'а
+ *      ._30T5V div, ._2v736 - табы в popup'е
+ * 
+ * 
+ * .TwNu0 - общая кнопка фильтрации ленты (все / только новые)
+ *      ._2-0uF - лежит в .TwNu0, обозначает неактивную кнопку
+ *      ._323nFлежит в .TwNu0, обозначает активную кнопку
+ * 
+ * ._2s01W - кнопка для отправки коммента в пост на стене
+ * ._2GK1F - элемент под полем для написания коммента к записи на стене, там можно приклеить картинку к посту
+ * ._2s01W - кнопки
+ * ._2IE4u - изображение мегафона, появляющееся при наведении мыши на карточку класса
+ *
+ */
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+body{
+    --secondary-color: #1C1E1F;
+    --third-color: #37393A;
+    --forth-color: #5E6061;
+    --main-color: #090C0D;
+    --text-color: #B1B3B4;
+    --links-color: #3CC9C9;
+    --hovered-text-color: #1C50C9;
+    overflow-x: hidden!important;
+}
+
+
+
+/*######### Transition area ######### */
+
+._2WtTC,
+a,
+._3gAxX>div>div:nth-child(2) a div,
+#content a,
+#content strong,
+.tabs ul li,
+#reply_button,
+.hmw tr td{
+    transition: 0.8s all;
+}
+
+
+
+
+/*######### Replace image area ######### */
+
+
+
+._2IE4u{
+    transition: 0.9s all;
+    background: url(https://i.ibb.co/8YqrM58/promotion.png) no-repeat !important;
+}
+
+._2yP12>a[href="https://schools.dnevnik.ru/school.aspx?school=1000005761720&view=schoolposts"],
+.f4x61 div,
+#subheader>a[href="https://schools.dnevnik.ru/school.aspx?school=1000005761720"],
+._2yP12>a[href="https://schools.dnevnik.ru/school.aspx?school=1000005761720&view=staffposts"]{
+    position: relative;
+}
+
+._2yP12>a>img[src="https://b2.csdnevnik.ru/socialnetwork-avatar/4c65cc30d455e31193fc005056815c95.jpg?d=20141202092450"],
+.f4x61 div svg,
+.FVGLk svg,
+#subheader>a[href="https://schools.dnevnik.ru/school.aspx?school=1000005761720"] img,
+._2yP12>a>img{
+    visibility: hidden!important;
+}
+
+.f4x61 div:before{
+    left: -4px;
+    top: 0;
+    background-image: url(https://i.ibb.co/gFV45Vm/photo.png);
+}
+
+.FVGLk:before{
+    top: 8px;
+    left: 0;
+    background-image: url(https://i.ibb.co/8MnQZmY/eye.png);
+}
+
+._2yP12>a[href="https://schools.dnevnik.ru/school.aspx?school=1000005761720&view=schoolposts"]:before,
+._2yP12>a[href="https://schools.dnevnik.ru/school.aspx?school=1000005761720&view=staffposts"]:before{
+    left: 0;
+    top: 0;
+    background-image: url(https://i.ibb.co/0MVBHQ2/imgonline-com-ua-Resize-4pr-UKx-R5c-Z9-MI1.png);
+}
+a#IDSchoolAdministration, a#organization_administration {
+    background: url(https://i.ibb.co/svtRYYk/screwdriver-and-wrench-crossed-1.png) no-repeat !important;
+    
+}
+
+#subheader>a[href="https://schools.dnevnik.ru/school.aspx?school=1000005761720"]:before{
+    left: 0;
+    top: 0;
+    background-image: url(https://i.ibb.co/0MVBHQ2/imgonline-com-ua-Resize-4pr-UKx-R5c-Z9-MI1.png);
+}
+#content #subheader>a[href="https://schools.dnevnik.ru/school.aspx?school=1000005761720"] {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+}
+
+._2yP12>a[href="https://schools.dnevnik.ru/school.aspx?school=1000005761720&view=schoolposts"]:before,
+.f4x61 div:before,
+.FVGLk:before,
+#subheader>a[href="https://schools.dnevnik.ru/school.aspx?school=1000005761720"]:before,
+._2yP12>a[href="https://schools.dnevnik.ru/school.aspx?school=1000005761720&view=staffposts"]:before{
+    position: absolute; 
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-repeat: no-repeat;
+}
+
+
+
+/*#########  set third color ######### */
+
+._3Q3kb{
+    background-color:#ef6fef!important;
+} 
+
+
+.rounded .cc,
+#content ._1pj9Y div,
+#content ._3ZQex>div, 
+._2GK1F,
+.link-form .panel .rounded, 
+form .panel .rounded,
+.usefull-link,
+#content .info-message,
+.most-active-filter__block{
+    background-color: var(--third-color)!important;
+}
+
+#content ._1pj9Y div a, 
+#content ._1pj9Y span, 
+#content ._1pj9Y b, 
+#content ._1pj9Y i, 
+#content ._1pj9Y button,
+#content ._1pj9Y p{
+    background-color: inherit!important;
+}
+#content ._1pj9Y button div{
+    background-color: transparent!important;
+}
+
+
+
+/*######### set secondary color ######### */
+
+._1pj9Y *, 
+.article-area, 
+._3Ebup div, 
+._4qnSH>div, 
+._3JScN, 
+._1x1-2, 
+._2WtTC{ /* secondary color for 1st plan elements*/
+    background-color: var(--secondary-color)!important;
+}
+
+
+/*######### set primary color ######### */
+
+body, 
+.main_top-30,
+.page-wrapper, 
+.page-header, 
+.page-footer, 
+.page-footer__statistics, 
+.page-footer__content, 
+.user-profile-box__info{
+    background-color: var(--main-color)!important;
+}
+
+/*######### delete elements area ######### */
+
+.login__body__hint,
+.button_show-form-btn,
+.banner970, 
+.page-footer__banner, 
+._1K9iv, 
+#feed_finished, 
+._3t2tO,
+.bannerBackground,
+.page-notification__content,
+.notificationBlock,
+.page-notification,
+.sub_bunner,
+.dynamic_banner1,
+.all-journal-types>.clear,
+.bannerWrapper,
+#adfox_150834169742018980,
+#AdFox_banner_2666785675,
+#AdFox_banner_3936734873,
+#adfox_1479219216,
+login__pubservices-link,
+form.journal-type hr,
+.tabs .tc2,
+.tabs .tc1,
+.QZ5RT{
+    display: none!important;
+}
+
+
+
+/*######### delete default borders and shadows ######### */
+
+._1pj9Y, 
+._3Ebup div, 
+._4qnSH>div, 
+._3gAxX, 
+.header-links a, 
+._2WtTC,
+._2v43-, 
+._3zOAj,
+._1x1-2,
+._30T5V div, ._2v736,
+._1x1-2,
+.col23 .panel .rounded,
+.col23 .panel .rounded input,
+.col23 .panel .rounded textarea,
+.login__header,
+.article-area,
+.rounded,
+form .panel .rounded select,
+form.eggiasearch input[type=text],
+#content ._3ZQex,
+.usefull-link,
+#content .info-message,
+.most-active-school,
+.most-active-filter__block,
+.most-active-filter,
+.most-active-filter__button,
+.most-active-filter__block__select,
+ #content .r,
+.formSearch select,
+.formSearch input{
+    box-shadow: none!important;
+    -webkit-box-shadow: none!important;
+    border: none!important;
+    outline:none!important;
+}
+
+
+/*######### set bright font FOR LINKS  ######### */
+
+
+
+/*######### set bright font ######### */
+
+._1ftZa, 
+p, 
+.school_title, 
+._3HQAn, 
+strong, 
+._1pj9Y *, 
+._1x1-2 *, 
+_2bihi div, 
+._2-0uF, 
+._2WtTC, 
+.yX4Ha:nth-child(n),
+.col23 .panel .rounded *,
+#journalModalHeader,
+form label,
+.select-all-classes label,
+form .panel .rounded select,
+form.eggiasearch input[type=text],
+.cc .contacts dd,
+.QEkIc,
+._3ThvH,
+#content .info-message,
+.most-active-filter,
+ #content .r,
+.formSearch select,
+.formSearch input,
+.gridLines th{ 
+    color: var(--text-color)!important;
+    text-shadow: none!important;
+}
+
+
+/*######### highlight hovered text ######### */
+
+a:hover,
+#content a:hover,
+#content strong:hover,
+._2v43- div:hover, 
+._32TO3:hover, 
+._2-0uF:hover, 
+._2WtTC:hover,
+._3gAxX>div>div:nth-child(2) a div:hover,
+#reply_button:hover{ /* подсветка текстовых элементов при наведении мыши*/
+    color: var(--hovered-text-color)!important;
+    cursor: pointer!important;
+}
+
+
+/*######### custom buttons ######### */
+
+
+.post_widget_button >button:before, 
+._2s01W:before,
+.login__pubservices-link_login:before,
+#print:before,
+.journal-export-button input:before,
+.lesson-planner-search-panel input[type = 'button']:before,
+.lesson-planner-search-panel input[type = 'submit']:before,
+form input.button:before{
+    transition: opacity .5s linear;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(100deg, #e80081 0, #23e100)!important;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 15px
+}
+
+
+    /* unnececary component for amazing hover-animation */
+.post_widget_button >button:hover:before, 
+._2s01W:hover:before,
+.login__pubservices-link_login:hover:before,
+#print:hover:before,
+.journal-export-button input:hover:before,
+.lesson-planner-search-panel input[type = 'button']:hover:before,
+.lesson-planner-search-panel input[type = 'submit']:hover:before,
+form input.button:hover:before{
+    opacity: 1
+}
+
+.post_widget_button >button, 
+._2s01W,
+.login__pubservices-link_login,
+#print,
+.journal-export-button input,
+.lesson-planner-search-panel input[type = 'button'],
+.lesson-planner-search-panel input[type = 'submit'],
+form input.button{
+    z-index: 1!important;
+    position: relative;
+    background-image: linear-gradient(100deg, #e80081 0, #e80081)!important;
+    transition: all 1.4s!important;
+    text-shadow: none!important;
+    box-shadow: none!important;
+    border-radius: 15px!important;
+    font-family: Roboto!important;
+    outline: none!important;
+    border: none!important;
+    font-weight: normal!important;
+}
+
+.journal-export-button input,
+.lesson-planner-search-panel input[type = 'button'],
+.lesson-planner-search-panel input[type = 'submit'],
+form input.button,
+input#choose{
+    -webkit-appearance: button;
+    padding: 5px 10px;
+}
+
+.journal-export-button input:hover,
+.lesson-planner-search-panel input[type = 'button']:hover,
+.lesson-planner-search-panel input[type = 'submit']:hover{
+ cursor: pointer;   
+}
+
+.lesson-planner-search-panel > div:last-child > input,
+form input.button{
+    width: auto!important;
+}
+
+
+
+
+/*#########  set amazing smooth edges ######### */
+
+._1pj9Y, 
+._3Ebup>div, 
+._4qnSH>div, 
+.header-links a, 
+._3gAxX, 
+._2WtTC,
+.rounded,
+.rounded .cc,
+.article-area{ 
+    border-radius: 10px!important;
+}
+._27nE1,
+#content ._25DbF{
+    border-radius: 9px 9px 0px 0px!important;
+}
+
+._3i2UP{
+    border-radius: 0px 0px 9px 9px !important;
+}
+._2tF48>div, 
+.TV0uF div, 
+.TV0uF, 
+._2tF48, 
+.QEkIc, 
+._3poVc, 
+._1pXMM div, 
+._3ZQex div:nth-child(2){
+    border-radius: 0px 0px 10px 10px!important;
+}
+
+
+
+
+
+
+
+
+
+.header-menu{
+    width: 938px!important;
+}
+    .header-menu__item{
+        line-height: 44px!important;
+        height: 0!important;
+    }
+        .header-menu__item_active>a:after, 
+        .header-menu__item_current>a:after{
+            border-bottom: 8px solid #2E3031!important;
+            top: 38px;
+        }
+
+    .header-menu>li>a, 
+    .header-menu>li, 
+    .header-menu{
+        background-color: #40C269!important;
+        color: #fefeff!important;
+        font-weight: 500!important;;
+    }
+        .header-submenu{
+            background-color: #2E3031 !important;
+            border-radius: 0px 0px 5px 5px;
+        }
+
+
+
+
+
+/* отображение уведомления о новых записях */
+._3JScN ._285dZ{ 
+    width: auto!important;
+    background-color: #E8005C!important;
+    outline: none;
+    border: none;
+}
+
+
+/* ._2s01W - кнопка для отправки коммента в пост на стене */
+._2s01W{
+    margin-right: 10px;
+    padding: 8px 15px!important;
+}
+    ._2s01W div{
+        background-color: transparent!important;
+        color:#D7D9DA !important;
+    }
+
+
+
+/* блок комменов под постами в ленте*/
+._2v56c._3seqR{ 
+    border-bottom: 1px solid #403c3c!important;
+    border-top: 1px solid #403c3c!important;
+}
+    /* элемент под полем для написания коммента к записи на стене, там можно приклеить картинку к посту*/
+    ._2GK1F{ 
+        border-top: 1px dashed #352e42!important;
+    }
+
+
+
+._3zOAj{
+    z-index: 2!important;;
+}
+
+
+
+._3gAxX>div{
+    border-radius: 10px!important;      
+}
+._3gAxX>div>div:nth-child(1){
+    border-radius: 10px !important;     
+}
+._3B0SP{
+    border-radius: 10px 10px 0px 0px !important;      
+}
+
+
+/* тело бокового календаря, где отображаются предметы с кабинетом */
+._3gAxX>div>div:nth-child(2){
+    background-color: var(--secondary-color)!important;
+    border-radius: 0px 0px 10px 10px!important;
+}
+._3gAxX>div>div:nth-child(2) a div{
+    border-bottom: none!important;
+    color: var(--links-color)!important;
+}
+    /*шапка бокового календаря*/
+    .GJNLK, ._3T9bh{
+        border-radius: 10px 10px 0px 0px!important;    
+    }
+    ._3T9bh div{
+        color: var(--text-color);
+    }
+    ._1Fg4:before, .yX4Ha:before{ /* выбранный день*/
+        background-color: #E80081      !important;                          
+    }
+    ._1Fg4 ._3-q_F{
+        background-color: #335496 !important;  
+    }
+    .GJNLK>div{     
+        background-color: #37393A !important;
+    }
+    ._3B0SP{ /* названия дней в шапке календаря*/
+        color: var(--text-color) !important;
+    }
+    ._1y0kg{ /* названия выходных дней в шапке бокового календаря */
+        color: #FFC11E !important;
+    }
+        /* дни в боковом календаре*/
+        ._15ywV:hover{
+            cursor: pointer!important;
+        }
+        /* стрелки на календаре сбоку*/
+        ._34Q-1{ 
+            background-color: inherit!important;
+        }
+        ._2fGfz, ._3T9bh{
+            border-radius: 10px 10px 0px 0px!important;                                
+        }
+    ._3003D{ /* окно "нет уроков"*/
+        border-bottom: none        !important;     
+        color: var(--text-color);
+        background: url(https://i.ibb.co/j6X2dH6/person-walking-1.png) no-repeat center 15px !important;    
+    }
+
+
+
+
+
+
+
+/* ссылки "страница школы", "администрация" и тд */
+._3JScN{ 
+    margin: 10px 0;
+    border-radius: 8px;
+    padding: 16px 0px;
+}
+    ._3JScN>div{
+    margin-left: 5px;
+    }
+
+
+
+
+
+.GJNLK{
+    background-color: #2B2D2E !important;
+}
+
+._1ZP7y *{
+    font-family: Comfortaa!important;
+    color: #ef6fef!important;
+}
+._3Q3kb, ._3Q3kb:after, ._3Q3kb:before{
+    background-color: #ef6fef!important;
+}
+
+
+
+
+p{
+    text-transform: uppercase;
+}
+.user-profile-box__info_row p{
+    text-transform: none!important;
+}
+
+
+
+/* блоки  классов на главной странице */
+._1wh1G, 
+._30T5V, 
+._2bihi{
+    border-bottom: 1px solid #2f2c2c!important;
+}
+    /* картинки  классов на главной странице */
+    ._1wh1G img{
+        border-radius: 20px!important;
+        
+    }
+
+
+
+
+
+
+._2bihi div{
+    font-size: 1.12em!important;
+}
+
+    
+
+.page-footer__content a{
+    text-decoration: none!important;
+}
+
+
+a, #content a, #content strong{
+    text-decoration: none!important;
+    color: var(--links-color)!important;
+    font-family: Roboto !important;
+}
+svg{
+    filter: invert(.7) sepia(2) saturate(10) hue-rotate(2235deg) !important;
+}
+
+
+.button-with-counter__counter{
+    background-color: #2B2DB2!important;
+}
+.FVGLk{
+    position: relative;
+}
+
+
+
+/* .TwNu0 - общая кнопка фильтрации ленты (все / только новые)*/
+.TwNu0 div{
+    transition: all 0.9s;
+    border: none!important;        
+    -webkit-box-shadow: none!important;        
+    box-shadow: none!important;   
+}
+    /*лежит в .TwNu0, обозначает неактивную кнопку*/
+    ._2-0uF{ 
+        background-color: #1C1E1F!important;   
+        color
+    }
+    /*лежит в .TwNu0, обозначает активную кнопку*/
+    ._323nF{
+        color: #FFFFDF!important;
+        background-color: #FF9400!important;
+            
+    }
+
+
+/* фон у popup'а*/
+._1aEpT{ 
+    background: rgba(8, 7, 7, 0.71)!important;
+}
+    /* блок табов в popup'е: "посмотрели" и "не посмотрели" */
+    ._1k2Ot{
+        transition: all 0.9s;
+    }
+        /* активный таб */
+        .Zr-iQ{
+            background-color: #F7A22C!important;
+            color: #120C03!important;
+        }
+        /* неактивный таб */
+        ._32TO3{
+            background-color: #343637!important;
+        }
+        /* иконки user'ов в popup'е */
+        ._3XNsu, 
+        ._3XNsu span{ 
+            border-radius: 20px!important;
+            color: #E4E4E4!important;
+            background-color: inherit!important;
+        }
+
+
+._5Stl6{
+    background-color: #8546EA!important;
+}
+
+._2v43-:after, 
+._3zOAj:after,
+._2v43-:before, 
+._3zOAj:before{
+    border-bottom-color:var(--third-color)!important;
+}
+
+._2v43- div, 
+._3zOAj div{
+    transition: 0.5s all;
+    background-color: var(--third-color)!important;
+}
+
+
+._1wsIH *{
+    background-color: var(--third-color)!important;
+}
+
+.tabs ul li *, .tabs ul li, .tabs ul *{ /* табы на странице настройки профиля */
+    background-color: var(--secondary-color)!important;
+    color: var(--text-color)!important;
+}
+
+.col23 .panel .rounded{
+background-color: var(--secondary-color)!important;
+}
+
+.col23 .panel .rounded input, 
+.col23 .panel .rounded textarea,
+#journalModalHeader{
+    border-radius: 8px 8px 0px 0px!important;
+    background-color: var(--third-color)!important;
+}
+
+.classes *{
+    text-transform: uppercase!important;
+    font-family: Roboto!important;
+}
+
+/* модальное окно для выбора журнала */
+#overlayModal{
+    background-color: var(--secondary-color);
+    position: absolute!important;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%)!important;
+    width: 100%!important;
+    height: 130%!important;;
+}
+
+.all-journal-types h3{
+    color: #11B111;
+}
+
+.all-journal-types{
+    height: 90%!important;
+    width: 100%!important;
+    margin: 0!important;
+    padding: 0!important;
+    display: grid!important;
+    grid-template-columns: 1fr 2fr!important;
+    grid-template-rows: 1fr 1fr!important;
+    grid-template-areas: "top-calendar subject-select"
+                         "bottom-calendar subject-select";
+    position: absolute!important;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%)!important;
+}
+
+
+#weekPicker{
+    align-self: center;
+    grid-area: top-calendar;
+}
+#daypicker{
+    align-self: center;
+    grid-area: bottom-calendar;
+}
+.journal-type-container{
+    grid-area: subject-select;
+}
+
+#subject_items{
+    position: relative!important;
+    width: 100%!important;
+    height: 260%!important;
+}
+.subject_list li{
+    margin-bottom: 8px!important;
+}
+.subject_list{
+    padding-left: 18px!important;
+    padding-top: 10px!important;
+    position: absolute!important;
+/*     top: 50%; */
+    left: 0;
+/*     transform: translate(-50%, -50%); */
+    
+}
+.subject_list a{
+    font-size: 1.35em!important;
+}
+
+
+.ui-datepicker-next span, .ui-datepicker-prev span{
+    visibility: hidden;
+    
+}
+.ui-datepicker-next, .ui-datepicker-prev{
+    position: relative!important;
+}
+
+.ui-datepicker-next:before, .ui-datepicker-prev:before{
+    position: absolute; 
+    bottom: 0;
+    content: "";
+    background-repeat: no-repeat;
+    top: 0px;
+    background-image: url(https://i.ibb.co/HT7Kf2K/right-arrow.png);
+}
+
+.ui-datepicker-next:before{
+    left: 10px;
+    right: 0;
+}
+
+.ui-datepicker-prev:before{
+    left: 0;
+    right: 16px;
+    transform: rotate(180deg);
+}
+
+
+.ui-datepicker{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal:before{
+/*     z-index: 999; */
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 0px;
+    content: "";
+    background-repeat: no-repeat;
+    top: -20px;
+    right: -23px;
+    background-image: url(https://i.ibb.co/z5GymYw/cancel-1.png);
+}
+.modal .close{
+    background: none!important;
+}
+
+#content{
+    background-color: var(--secondary-color)!important;
+    border-radius: 10px!important;
+    padding: 20px!important;
+}
+.ui-datepicker-calendar th.ui-datepicker-week-end span {
+    color: #78ff00!important;
+}
+
+.ui-datepicker-calendar tr{
+    margin: 10px;
+}
+
+.ui-datepicker-inline{
+    width: auto!important;
+}
+
+.ui-datepicker-title{
+    color: #f7f9e1!important;
+    font-weight: normal!important;
+    font-size: 1.23em!important;
+}
+.ui-datepicker{
+    width: auto!important;
+}
+
+.ui-datepicker-calendar tbody tr:hover {
+    background-color: var(--third-color)!important;
+}
+
+td, th{
+    text-align: center!important;
+}
+
+.journal-datepicker .ui-datepicker-title {
+    z-index: -1;
+    color: gray;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.ui-datepicker-title {
+    border-bottom: 1px solid #423636;
+    position: relative;
+    bottom: 25px;
+}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+td a, td span, td, th, th span{
+    font-family: Roboto!important;
+    font-size: 1.13em!important;
+}
+
+
+.all-journal-types>div:nth-child(3){
+    margin: 30px;
+}
+
+.modal{
+    border: none!important;
+}
+.journal-subjects-container{
+    padding: 6px!important;
+    width: auto!important;
+    border: none!important;
+    border-radius: 10px 0px 0px 10px;
+    background: linear-gradient(to right, var(--third-color), var(--secondary-color));
+/*     background-color: var(--third-color)!important; */
+}
+
+.journal-modal .all-journal-types > div + div, .journal-type-container {
+    border-left: none!important;
+}
+
+.main_top-30{
+position: relative!important;
+    top: 20%!important;
+        border-radius: 10px!important;
+}
+.login__header{
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+.login__pubservices-link_iconed{
+        background: url(https://i.ibb.co/QMTYqZ0/image.png) no-repeat no-repeat top -5px center;
+}
+
+.journal-modal #exposeMask {
+    background-color: rgb(0, 0, 0);
+}
+
+/* заголовок в секции "журналы"*/
+.player{
+    font-size: 1.29em;
+}
+
+.journal-actions .filter, .filter .link{
+    margin-top: 13px;  
+
+}
+
+.player h3, 
+h2, 
+.col13 h3,
+.col13 h5,
+#content .panel h3,
+.feed_notification_header h1{
+    font-family: Roboto!important;
+    color: #11B111!important;
+}
+#content .panel h3{
+    font-size: 1.4em;
+}
+
+.journal-filter .journal-actions .filter .active a, .f .active a, .filter .active a{
+       background-color:#11B111!important;
+    border-radius: 15px;
+}
+.filter .active a{
+    padding: 3px 10px;   
+}
+
+.toolset{
+    width: auto;
+    position: relative;
+    left: 20%;
+}
+
+.tabs li a, .tabs li span, .tabs li.active a, .tabs li.active span{
+    background-image: none;
+    border: none;
+    font-weight: normal;
+}
+
+
+.journal-filter .journal-actions .filter li a, .f li a{
+    padding: 5px 10px;   
+}
+label.f, .switch .first span{
+    padding: 5px 0;   
+}
+
+
+.tabs ul li a:hover, .tabs ul .active a{
+    background-image: none!important;
+}
+
+#print{
+    padding: 5px 10px;   
+}
+.tabs ul {
+    border-bottom: solid 1px #2b2f31;
+}
+
+
+
+form .panel .rounded select,
+form.eggiasearch input[type='text'],
+form [action="https://events.dnevnik.ru/new.aspx?network=1000000319394"] div input[type='text'],
+.most-active-filter__block__select,
+ #content .r,
+.formSearch select,
+.formSearch input{
+    background-image: none!important;
+    background-color:  var(--forth-color)  !important;
+}
+form .panel .rounded{
+    font-size: 1.2em;   
+}
+
+form .panel .rounded select#group{
+       text-transform: uppercase;
+}
+.eggiasearch .rounded{
+    padding-top: 18px;   
+}
+
+#content .blue2 .rounded, .blue2 .rounded2 , #content .gray .rounded{
+    background-color: inherit!important;
+}
+
+.col13 .rounded .cc .user_ava a, #content a.female, #content a.male,
+.peopleS .avatar{
+    background-color: inherit;
+    border-radius: 30px;
+}
+.col13 .rounded .cc{
+    font-size: 1.01em;
+}
+
+a.u{
+font-size: 1.01em;
+    margin-bottom: 5px;
+}
+
+div.links li a, a.u, #content .cc table .dd{
+    font-weight: normal;
+}
+
+._3ThvH{
+    margin-bottom: 30px;
+}
+
+.most-active-filter__button{
+    box-shadow: none;
+    text-shadow: none; 
+    background-image: none;
+}
+div.avatar{
+    background: none!important;
+}
+
+
+a.avatar img, div.avatar img {
+    border-radius: 30px;
+    background-color: inherit;
+}
+.footer__menu__buttons {
+    margin-top: 30px!important;
+}
+.homeworks{
+    background: none;
+}
+
+.homeworks .toolbox{
+    position: relative;
+    left: -20%;
+    width: auto;
+    float: none;
+}
+
+.hmw tr:nth-child(1){
+    height: 40px!important;
+}
+
+.hmw tr:hover, .hmw tr:hover td:not(.bgR){
+    background-color: var(--third-color)!important;
+    background-image:none;
+}
+
+.hmw b, .hmw td,  .hmw th, .hmw strong{
+    font-weight: normal!important;
+}
+
+.gridLines th{
+    background-color: var(--forth-color) !important;
+}
+.gridLines th, .gridLines td {
+    border: solid 1px #483737!important;
+}
+
+ul.display_inline-block .active{
+    background-color: #11B111!important;
+    border-radius: 15px;
+    padding: 3px 7px;
+}
+ul.display_inline-block .active a, ul.display_inline-block .active a:hover{
+    background-color: inherit;
+}
+.switch li:not(.active){
+    margin-top: 5px!important;
+}
+
+.pager ul{
+    margin-top: 20px;
+}
+
+.pager li a:hover{
+    background-color: inherit;
+}
+
+.pager li b{
+    background-color: #11B111!important;
+    border-radius: 17px;
+    padding: 5px 8px;
+}
+
+.formSearch{
+    margin-left: 20px!important;
+}
+.pager li a{
+    background-color: inherit;
+}
+
+select#group option{
+    text-transform: uppercase;
+}
